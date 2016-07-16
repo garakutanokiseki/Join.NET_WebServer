@@ -7,7 +7,7 @@ Sign up new user, ユーザー登録
 Regist, 送信する
 e-mail address, メールアドレス
 About, ■このサイトについて
-Join.NET is a service which can connect PCs over internet., Join.NETはインターネットを通じてパソコン同士を接続できるようにするサービスです。
+Join.NET is a service which can connect PCs over internet., Join.NETはインターネットを通じてパソコン同士を接続できるようにするサービスです。<br>アプリケーションは以下から入手できます。<br><a href="https://github.com/garakutanokiseki/Join.NET/tree/master/Release_binary">https://github.com/garakutanokiseki/Join.NET/tree/master/Release_binary</a><br>
 Featuer, ■特徴
 User can connect PCs via each UserID., ユーザーIDを指定して任意のサービスと通信を可能にします。
 "Example, User can connect inhouse web sever from out of home network.", 例えば、自宅内に設置したWebサーバーをインターネットに公開することなく宅外から接続可能にします。
