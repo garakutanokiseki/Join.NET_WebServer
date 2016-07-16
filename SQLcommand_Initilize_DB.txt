@@ -1,0 +1,2 @@
+create database livechat;//herokuではdbは作れない
+create table users(id serial primary key, userid text, password text, mail text);

@@ -1,0 +1,15 @@
+UserID, ユーザー名
+Password, パスワード
+Password(validate), パスワード(再入力)
+Sign in, サインイン
+Sign Up, ユーザー登録はこちら
+Sign up new user, ユーザー登録
+Regist, 送信する
+e-mail address, メールアドレス
+About, ■このサイトについて
+Join.NET is a service which can connect PCs over internet., Join.NETはインターネットを通じてパソコン同士を接続できるようにするサービスです。
+Featuer, ■特徴
+User can connect PCs via each UserID., ユーザーIDを指定して任意のサービスと通信を可能にします。
+"Example, User can connect inhouse web sever from out of home network.", 例えば、自宅内に設置したWebサーバーをインターネットに公開することなく宅外から接続可能にします。
+"Join.NET can tunnel any tcp protocol. ex.)http, ssh, rdt", 任意のTCP通信を転送することができます。HTTP、SSH、RDTなどのプロトコルを転送できます。
+How to use, ■使い方

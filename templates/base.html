@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>Join.NET</title>
+<script type="text/javascript" src="/static/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+<style>
+body {
+	padding-top: 60px;
+}
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">ナビの切り替え</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Join.NET</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+			{% block menu %}{% end %}
+			</ul>
+			{% raw navbar_login %}
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+			{% block body %}{% end %}
+
+	<br>
+
+	<div class="footer" style="padding: 40px 0;color:#DDDDDD; background-color: #434a54;">
+		<footer>
+			<p>(C)ガラクタと瓦礫 2016&nbsp;</p>
+		</footer>
+	</div>
+</body></html>

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block menu %}
+{% end %}
+
+{% block body %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-lg-12">
+			<h4>{{ _("Sign up new user") }}</h4>
+
+			<form class="form-horizontal" action="adduser" method="post">
+        {% module xsrf_form_html() %}
+				<div class="form-group">
+					<label class="col-lg-2 control-label">{{ _("UserID") }}</label>
+					<div class="col-lg-3">
+						<input name="txtID" class="form-control" size="60" value="" type="text">
+						<span class="help-inline"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-2 control-label">{{ _("e-mail address") }}</label>
+					<div class="col-lg-3">
+						<input name="txtMail" class="form-control" size="60" value="" type="text">
+						<span class="help-inline"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-2 control-label">{{ _("Password") }}</label>
+					<div class="col-lg-3">
+						<input name="pass_in" class="form-control" size="60" value="" type="password">
+						<span class="help-inline"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-2 control-label">{{ _("Password(validate)") }}</label>
+					<div class="col-lg-3">
+						<input name="pass_check" class="form-control" size="60" value="" type="password">
+						<span class="help-inline"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-lg-offset-2 col-lg-3">
+						<button id="btn_regist" class="btn btn-default" type="submit">{{ _("Regist") }}</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% end %}

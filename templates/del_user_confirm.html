@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block menu %}
+	<li><a href="/">設定</a></li>
+{% end %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-1 col-lg-1"></div>
+			<div class="col-sm-10 col-lg-10">
+				<div style="background-color:#ffffff;padding: 6px;border:1px solid;border-color:#888888;border-radius:12px">
+					<label>ユーザー情報の削除を削除しますか？</label><br>
+					<div align="center">
+						<a href="./del_user_commit"><button class="btn btn-default">はい</button></a>
+						<a href="/"><button class="btn btn-primary">いいえ</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-1 col-lg-1"></div>
+		</div>
+	</div>
+
+	<br>
+
+{% end %}

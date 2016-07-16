@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block menu %}
+	<li><a href="/">設定</a></li>
+{% end %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-1 col-lg-1"></div>
+			<div class="col-sm-10 col-lg-10">
+				<div style="background-color:#ffffff;padding: 6px;border:1px solid;border-color:#888888;border-radius:12px">
+					<h4>パスワードの変更</h4>
+					<form class="form-horizontal" action="/chg_pass" method="post">
+            {% module xsrf_form_html() %}
+						<div class="form-group">
+							<label class="col-lg-2 control-label">パスワード</label>
+							<div class="col-lg-3">
+								<input name="pass_in" class="form-control" size="60" value="" type="password">
+								<span class="help-inline"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label">パスワード(確認)</label>
+							<div class="col-lg-3">
+								<input name="pass_check" class="form-control" size="60" value="" type="password">
+								<span class="help-inline"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-3">
+								<button id="btn_regist" class="btn btn-default" type="submit">送信</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-sm-1 col-lg-1"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-1 col-lg-1"></div>
+			<div class="col-sm-10 col-lg-10">
+				<div style="background-color:#ffffff;padding: 6px;border:1px solid;border-color:#888888;border-radius:12px">
+					<h4>ユーザー情報の削除</h4>
+					<div align="center">
+						<a href="./del_user"><button class="btn btn-default">削除する</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-1 col-lg-1"></div>
+		</div>
+	</div>
+
+{% end %}
